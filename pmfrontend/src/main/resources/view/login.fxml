@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.secourse.patientportal.pmfrontend.controller.LoginController">
+   <children>
+      <VBox layoutX="21.0" layoutY="76.0" prefHeight="292.0" prefWidth="559.0">
+         <children>
+            <HBox prefHeight="39.0" prefWidth="559.0">
+               <children>
+                  <Label text="Username: " />
+                  <TextField fx:id="usernameField" alignment="CENTER" prefHeight="26.0" prefWidth="201.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="36.0" prefWidth="559.0">
+               <children>
+                  <Label text="Password: " />
+                  <PasswordField fx:id="passwordField" prefHeight="26.0" prefWidth="204.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="23.0" prefWidth="559.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleLogin" prefHeight="26.0" prefWidth="91.0" text="Login" />
+                  <Label fx:id="errorLabel" text="    Enter username and password to login" textFill="#39e450" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="218.0" layoutY="32.0" text="MacLogix  User Login">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
