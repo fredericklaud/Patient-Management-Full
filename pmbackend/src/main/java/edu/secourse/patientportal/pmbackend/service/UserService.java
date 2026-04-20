@@ -44,7 +44,7 @@ public class UserService {
         this.passwordEncoder = passwordEncoder;
     }
 
-    public UserService(){}
+//    public UserService(){}
 
     public User register(RegisterRequest registerRequest) {
         // Validate input
